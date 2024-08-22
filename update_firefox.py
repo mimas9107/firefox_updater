@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import os
 ## 從 shell中取得 firefox的執行路徑
 firefox_path=os.popen("which firefox").readlines()[0].rstrip("\n")
