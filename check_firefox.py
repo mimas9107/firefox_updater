@@ -54,6 +54,6 @@ else:
                 target_dir = "/opt/"
                 print("default directory is {}".format(target_dir))
             #os.popen("mv firefox {}".format(target_dir))
-            os.system("sudo mv firefox {}".format(target_dir))
+            os.system("sudo cp -r firefox {}".format(target_dir))
     else:
         print("The file {} doesn't exist".format(firefox_filename))
