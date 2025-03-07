@@ -40,12 +40,12 @@ else:
     command = "wget -c " + firefox_download_link
     #os.popen(command)
     os.system(command)
-    if ("tar.bz2" in firefox_download_link.split("/")[-1]):
+    if ("tar.xz" in firefox_download_link.split("/")[-1]):
         firefox_filename = firefox_download_link.split("/")[-1]
     if os.path.exists(firefox_filename):
         print("The file {} exists".format(firefox_filename))
         print("THe downloaded file will be extracted by administrator. >>")
-        os.system("sudo tar jxvf {}".format(firefox_filename))
+        os.system("sudo tar Jxvf {}".format(firefox_filename))
         #os.popen("tar jxvf {}".format(firefox_filename))
         if os.path.isdir("firefox"):
             print("Moving the firefox folder to...")
